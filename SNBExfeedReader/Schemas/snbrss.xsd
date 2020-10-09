@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:app1="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:app2="http://purl.org/dc/elements/1.1/" xmlns:app3="http://purl.org/dc/terms/" xmlns:app4="http://www.w3.org/2005/Atom" xmlns:app5="http://www.cbwiki.net/wiki/index.php/Specification_1.2/">
+  <xs:import namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#" schemaLocation="snbrss_app1.xsd" />
+  <xs:import namespace="http://www.cbwiki.net/wiki/index.php/Specification_1.2/" schemaLocation="snbrss_app5.xsd" />
+  <xs:import namespace="http://purl.org/dc/terms/" schemaLocation="snbrss_app3.xsd" />
+  <xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="snbrss_app2.xsd" />
+  <xs:import namespace="http://www.w3.org/2005/Atom" schemaLocation="snbrss_app4.xsd" />
+  <xs:element name="rss">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="channel" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="title" type="xs:string" minOccurs="0" />
+              <xs:element name="description" type="xs:string" minOccurs="0" />
+              <xs:element ref="app2:publisher" minOccurs="0" />
+              <xs:element ref="app2:date" minOccurs="0" />
+              <xs:element ref="app2:rights" minOccurs="0" />
+              <xs:element ref="app3:created" minOccurs="0" />
+              <xs:element ref="app3:license" minOccurs="0" />
+              <xs:element ref="app4:link" />
+              <xs:element name="item" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="title" type="xs:string" minOccurs="0" />
+                    <xs:element name="link" type="xs:string" minOccurs="0" />
+                    <xs:element name="description" type="xs:string" minOccurs="0" />
+                    <xs:element name="pubDate" type="xs:string" minOccurs="0" />
+                    <xs:element ref="app2:date" minOccurs="0" />
+                    <xs:element ref="app2:language" minOccurs="0" />
+                    <xs:element name="guid" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:simpleContent msdata:ColumnName="guid_Text" msdata:Ordinal="1">
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="isPermaLink" type="xs:string" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element ref="app5:statistics" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="app1:type" />
+        <xs:element ref="rss" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,50 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://www.cbwiki.net/wiki/index.php/Specification_1.2/" xmlns:mstns="http://www.cbwiki.net/wiki/index.php/Specification_1.2/" xmlns="http://www.cbwiki.net/wiki/index.php/Specification_1.2/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app5="http://www.cbwiki.net/wiki/index.php/Specification_1.2/" xmlns:app4="http://www.w3.org/2005/Atom" xmlns:app2="http://purl.org/dc/elements/1.1/" xmlns:app3="http://purl.org/dc/terms/" xmlns:app1="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <xs:import namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#" schemaLocation="snbrss_app1.xsd" />
+  <xs:import namespace="http://purl.org/dc/terms/" schemaLocation="snbrss_app3.xsd" />
+  <xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="snbrss_app2.xsd" />
+  <xs:import namespace="http://www.w3.org/2005/Atom" schemaLocation="snbrss_app4.xsd" />
+  <xs:element name="statistics" msdata:Prefix="cb">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="country" msdata:Prefix="cb" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+        <xs:element name="institutionAbbrev" msdata:Prefix="cb" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+        <xs:element ref="app1:type" />
+        <xs:element name="exchangeRate" msdata:Prefix="cb" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="baseCurrency" msdata:Prefix="cb" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+              <xs:element name="targetCurrency" msdata:Prefix="cb" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+              <xs:element name="rateType" msdata:Prefix="cb" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+              <xs:element ref="app1:type" />
+              <xs:element name="observation" msdata:Prefix="cb" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="value" msdata:Prefix="cb" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+                    <xs:element name="unit" msdata:Prefix="cb" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+                    <xs:element name="unit_mult" msdata:Prefix="cb" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+                    <xs:element name="decimals" msdata:Prefix="cb" type="xs:string" minOccurs="0" msdata:Ordinal="4" />
+                    <xs:element ref="app1:type" />
+                  </xs:sequence>
+                  <xs:attribute ref="app1:parseType" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="observationPeriod" msdata:Prefix="cb" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="frequency" msdata:Prefix="cb" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+                    <xs:element name="period" msdata:Prefix="cb" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+                    <xs:element ref="app1:type" />
+                  </xs:sequence>
+                  <xs:attribute ref="app1:parseType" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute ref="app1:parseType" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute ref="app1:parseType" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

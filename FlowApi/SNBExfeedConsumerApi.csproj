@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>0be5df09-cb05-4c7f-904f-bc9322023d4c</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SNBExfeedReader\SNBExfeedHandler.csproj" />
+  </ItemGroup>
+
+
+</Project>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:cb="http://www.cbwiki.net/wiki/index.php/Specification_1.2/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" version="2.0">
+  <channel>
+    <atom:link href="http://www.snb.ch/selector/en/mmr/exfeed/rss" rel="self" type="application/rss+xml" />
+    <title>Current exchange rates</title>
+ 
+    <description>Swiss National Bank (SNB): CHF exchange rates Zurich at 11 a.m.</description>
+    <dc:publisher>SNB</dc:publisher>
+    <dc:date>2020-10-05T09:03:06Z</dc:date>
+    <dc:rights>Copyright © Swiss National Bank, Zurich (Switzerland) 2020</dc:rights>
+    <dcterms:created>2020-10-05T09:03:06Z</dcterms:created>
+    <dcterms:license>https://www.snb.ch/en/srv/id/disclaimer</dcterms:license>
+    <item>
+      <title>CH: 1.0779 CHF = 1 EUR 2020-09-24 Daily rates (11:00)</title>
+      <link>https://www.snb.ch/en/iabout/stat/statrep/id/current_interest_exchange_rates#t3</link>
+      <description>1 EUR = 1.0779 CHF (Daily rates (11:00); 2020-09-25T12:02:07+02:00)</description>
+      <pubDate>Fri, 25 Sep 2020 10:02:07 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/en/iabout/stat/statrep/id/current_interest_exchange_rates#t3#EUR_1.0779_2020-09-24</guid>
+      <dc:date>2020-09-25T10:02:07Z</dc:date>
+      <dc:language>en</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:exchangeRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ExchangeRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1.0779</cb:value>
+            <cb:unit>CHF</cb:unit>
+            <cb:unit_mult>1</cb:unit_mult>
+            <cb:decimals>4</cb:decimals>
+          </cb:observation>
+          <cb:baseCurrency>CHF</cb:baseCurrency>
+          <cb:targetCurrency>EUR</cb:targetCurrency>
+          <cb:rateType>Daily rates (11:00)</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2020-09-24</cb:period>
+          </cb:observationPeriod>
+        </cb:exchangeRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1.1777 CHF = 1 GBP 2020-09-24 Daily rates (11:00)</title>
+      <link>https://www.snb.ch/en/iabout/stat/statrep/id/current_interest_exchange_rates#t3</link>
+      <description>1 GBP = 1.1777 CHF (Daily rates (11:00); 2020-09-25T12:02:07+02:00)</description>
+      <pubDate>Fri, 25 Sep 2020 10:02:07 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/en/iabout/stat/statrep/id/current_interest_exchange_rates#t3#GBP_1.1777_2020-09-24</guid>
+      <dc:date>2020-09-25T10:02:07Z</dc:date>
+      <dc:language>en</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:exchangeRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ExchangeRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1.1777</cb:value>
+            <cb:unit>CHF</cb:unit>
+            <cb:unit_mult>1</cb:unit_mult>
+            <cb:decimals>4</cb:decimals>
+          </cb:observation>
+          <cb:baseCurrency>CHF</cb:baseCurrency>
+          <cb:targetCurrency>GBP</cb:targetCurrency>
+          <cb:rateType>Daily rates (11:00)</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2020-09-24</cb:period>
+          </cb:observationPeriod>
+        </cb:exchangeRate>
+      </cb:statistics>
+    </item>
+  </channel>
+</rss>

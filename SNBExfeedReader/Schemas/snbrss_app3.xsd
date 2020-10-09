@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://purl.org/dc/terms/" xmlns:mstns="http://purl.org/dc/terms/" xmlns="http://purl.org/dc/terms/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app3="http://purl.org/dc/terms/" xmlns:app4="http://www.w3.org/2005/Atom" xmlns:app2="http://purl.org/dc/elements/1.1/" xmlns:app5="http://www.cbwiki.net/wiki/index.php/Specification_1.2/" xmlns:app1="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <xs:import namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#" schemaLocation="snbrss_app1.xsd" />
+  <xs:import namespace="http://www.cbwiki.net/wiki/index.php/Specification_1.2/" schemaLocation="snbrss_app5.xsd" />
+  <xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="snbrss_app2.xsd" />
+  <xs:import namespace="http://www.w3.org/2005/Atom" schemaLocation="snbrss_app4.xsd" />
+  <xs:element name="created" msdata:Prefix="dcterms" type="xs:string" />
+  <xs:element name="license" msdata:Prefix="dcterms" type="xs:string" />
+</xs:schema>
