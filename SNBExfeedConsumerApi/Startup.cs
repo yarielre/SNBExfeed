@@ -19,6 +19,7 @@ namespace SNBExfeedApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers().AddXmlSerializerFormatters();
+            services.AddSwaggerGen();
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -28,6 +29,14 @@ namespace SNBExfeedApi
             }
 
             app.UseHttpsRedirection();
+
+            app.UseSwagger();
+            
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "SNB Exfeed API V1");
+                c.RoutePrefix = string.Empty;
+            });
 
             app.UseRouting();
 
